@@ -13,21 +13,21 @@ public class TachesPlanifiees {
     // Toutes les 2 minutes : snapshot
     @Scheduled(cron = "0 */2 * * * *")
     public void snapshot() {
-        System.out.println("🕒 Snapshot en cours...");
+        System.out.println(" Snapshot en cours...");
         factureService.sauvegarderSnapshotSoldes();
     }
 
     // Toutes les 3 minutes : détection
     @Scheduled(cron = "0 */3 * * * *")
     public void detecter() {
-        System.out.println("🔍 Détection en cours...");
+        System.out.println(" Détection en cours...");
         factureService.detecterFactures();
     }
 
     // Toutes les 4 minutes : notification
     @Scheduled(cron = "0 */4 * * * *")
     public void notifier() {
-        System.out.println("📤 Notification en cours...");
+        System.out.println(" Notification en cours...");
         factureService.envoyerNotificationsParBatch(1000);
     }
 

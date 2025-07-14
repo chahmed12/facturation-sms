@@ -6,6 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
+@EnableAsync 
 // @EnableJpaRepositories(basePackages = "com.bmci.demo.repository")
 public class DemoApplication {
 

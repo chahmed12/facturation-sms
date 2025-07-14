@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 @Table(name = "masrivi")
 public class BanqueDigital {
     @Id
@@ -19,41 +20,6 @@ public class BanqueDigital {
     private String compteurEau;
     private String compteurElectricite;
     private String telephone;
-
-    public String getTelephone()
-    {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getCompteurEau() {
-        return compteurEau;
-    }
-
-    public void setCompteurEau(String compteurEau) {
-        this.compteurEau = compteurEau;
-    }
-
-    public String getCompteurElectricite() {
-        return compteurElectricite;
-    }
-
-    public void setCompteurElectricite(String compteurElectricite) {
-        this.compteurElectricite = compteurElectricite;
-    }
-
-    public Long getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(Long clientId) {
-        this.clientId = clientId;
-    }
-
-
 }
 
 
