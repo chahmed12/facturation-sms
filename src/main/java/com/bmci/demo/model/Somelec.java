@@ -15,21 +15,6 @@ public class Somelec {
 
     private Double solde;
 
-    // Getters et Setters
-    public String getCompteurElectricite() {
-        return compteurElectricite;
-    }
 
-    public void setCompteurElectricite(String compteurElectricite) {
-        this.compteurElectricite = compteurElectricite;
-    }
-
-    public Double getSolde() {
-        return solde;
-    }
-
-    public void setSolde(Double solde) {
-        this.solde = solde;
-    }
 }
 
